@@ -1,0 +1,167 @@
+/** - CardSwitcher custom styles - **/
+
+#top-of-page{
+    display: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font: normal 0.9em/150% 'Arimo', "Trebuchet MS", arial, verdana, sans-serif; 
+    text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
+    background-color: #EEEEEE;
+}
+
+#header{
+    margin:0px;
+    width:100%;
+    top:0;
+    position:absolute;
+
+    /* SVG fallback(Opera 11.10-, IE9) */
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2JhKDAsMCwwLDEpOyIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOnJnYmEoODAsODAsODAsMSk7IiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IGZpbGw9InVybCgjZ3JhZGllbnQpIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIiAvPjwvc3ZnPg==);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,1), rgba(80,80,80,1));
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, rgba(0,0,0,1), rgba(80,80,80,1));
+    /* Chrome 7+ & Safari 5.03+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,1)), color-stop(1, rgba(80,80,80,1)));
+    /* IE5.5 - IE7 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF000000,EndColorStr=#FF505050);
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF000000,EndColorStr=#FF505050)"
+}
+
+#header h1 {
+    padding: 0;
+    color: #F2F2F2;
+    text-decoration: none;
+    -webkit-mask-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#F2F2F2), to(#858585));
+}
+
+.icon{
+    vertical-align:middle;
+    border:0;
+    padding:0;
+    padding-bottom:10px;
+    padding-left:15px;
+    padding-right:10px;
+}
+
+.title{
+    color: white;
+    /*text-align: center;*/
+    font-weight: normal;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+/* SVG fallback(Opera 11.10-, IE9) */
+background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2JhKDgwLDgwLDgwLDEpOyIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOnJnYmEoMCwwLDAsMSk7IiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IGZpbGw9InVybCgjZ3JhZGllbnQpIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIiAvPjwvc3ZnPg==);
+
+/* Opera 11.10+ */
+background: -o-linear-gradient(top, rgba(80,80,80,1), rgba(0,0,0,1));
+
+/* Firefox 3.6+ */
+background: -moz-linear-gradient(top, rgba(80,80,80,1), rgba(0,0,0,1));
+
+/* Chrome 7+ & Safari 5.03+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(80,80,80,1)), color-stop(1, rgba(0,0,0,1)));
+
+/* IE5.5 - IE7 */
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF505050,EndColorStr=#FF000000);
+
+/* IE8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF505050,EndColorStr=#FF000000)";
+}
+
+#buy_button{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+}
+
+#description{
+    width: 40%;
+    color: #2F2F2F;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight:bold;
+    font-family:MPS, sans-serif;
+}
+
+#gallery{
+	padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#screenshots{
+	overflow: scroll;
+    /*width: 90%;*/
+    width: 100%;
+    margin: auto;
+}
+
+.screenshot{
+    height: 384px;
+    width: 256px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: black;
+}
+.screenshot.ipad{
+    height: 384px;
+    width: 288px;
+}
+.screenshot_wrapper{
+    display: inline;
+}
+
+.screenshot.inactive {
+    opacity: 0.7;
+}
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 3%;
+    padding-left: 3%;
+    background: #888888;
+    border-top: 1px black solid;
+}
+
+#cydia_store{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+}
+
+#coming_soon{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    text-align:center;
+    font-weight:bold;
+    font-size: 60px;
+    background-color: rgba(50, 50, 50, 0.9);
+    z-index:99999999;
+}
+
+#coming_soon_text{
+    position:absolute;
+    top:45%;
+    width:100%;
+    height:100px;
+    margin-top:-50px;
+    color:black;
+    text-shadow:white 0 0 10px;
+}
